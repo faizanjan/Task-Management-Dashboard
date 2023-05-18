@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@600&family=Poppins:ital,wght@0,300;0,400;0,500;1,900&display=swap" rel="stylesheet"><title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="">
+            <i class="fa-solid fa-inbox"></i>
+            Inbox
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-star"></i>
+            Today
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-calendar"></i>
+            Upcoming
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-hashtag"></i>
+            Important
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-handshake"></i>
+            Meetings
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-trash"></i>
+            Trash
+          </a>
+        </li>
+      </ul>
+
+      <ul id="category">
+        <li>
+          <a href="">
+            <i class="fa-solid fa-users"></i>
+            Family
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-sun"></i>
+            Vacation
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            Festival
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-music"></i>
+            Concerts
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <h1>Today Tasks</h1>
+
+        <ul id="main-menu">
+          <li class="active">All</li>
+          <li>Important</li>
+          <li>Notes</li>
+          <li>Links</li>
+        </ul>
+      </header>
+
+      <div class="todos-container" id="active-todos">
+
+        <div class="todo">
+            <input type="checkbox" checked>
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge approved">Approved</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge in-progress">In Progress</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox" checked>
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge in-review">In Review</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge in-progress">In Progress</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge approved">Approved</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge in-review">In Review</span>
+        </div>
+
+      </div>
+
+      <div class="todos-container" id="upcoming-todos">
+
+        <h1 id="upcoming-heading">Upcoming Tasks</h1>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+        <div class="todo">
+            <input type="checkbox">
+            <label for="">Dashboard Design Implementation</label>
+            <span class="badge waiting">Waiting</span>
+        </div>
+
+      </div>
+
+    </main>
+
+    <aside>
+
+        <div id="profile">
+            <i class="fa-regular fa-user"></i>
+            <span><img src="" alt=""></span>
+        </div>
+
+        <div id="schedule">
+
+            <h1>Schedule</h1>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="meeting-card">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="meeting-detail">
+                    <h5 class="meeting-time">08:00 - 09:00 AM</h5>
+                    <h2 class="meeting-topic">Product Review</h2>
+                </div>
+                <div class="attendies">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+  </body>
+
+  <!-- ---------------------------- -->
+  <script
+    src="https://kit.fontawesome.com/a1085fbeac.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    let mainMenu = document.querySelectorAll("#main-menu li");
+    mainMenu.forEach((li) => {
+      li.addEventListener("click", (event) => {
+        mainMenu.forEach((el) => {
+          if (el === event.target) {
+            el.classList.add("active");
+          } else {
+            el.classList.remove("active");
+          }
+        });
+      });
+    });
+  </script>
+</html>
